@@ -14,8 +14,7 @@ from scipy import stats
 # ===================== CONFIG =====================
 TELEGRAM_TOKEN = os.getenv("7044109545:AAF_2u9_HqVGZzFIubnIWCQ3dFm7MyQfmWw")
 CHAT_ID = os.getenv("5773032750")
-WSS_URL = os.getenv("wss://1xlite-07241.pro/games-frame/sockets/crash?ref=1&gr=1559&whence=114&fcountry=66&appGuid=games-web-host-b2c-web-v3&lng=en&v=1.5&access_token=eyJhbGciOiJFUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiIxMC8xMTU2MTM3NzUxIiwicGlkIjoiMSIsImp0aSI6IjAvYWExMTQxMTQwZjAzOWJkNDNkY2U4ZjVhZDdmM2RIYmlzZTNhYzk4ZmRmMzUwN2U1NWM1NzBIZThkNDYyM2E0NCIsImFwcCI6Ik5BIiwic2lkIjoiMDE5Y2Q2ODItNjE0Zi03MTgzLWIzNWItZDEXZDU3NWQ1YzU2IiwiaW5uZXIiOiJ0cnVlIiwid3QiOiJ0cnVlIiwibmJmIjoxNzczMTI1Mzk0LCJleHAiOjE3NzMxMzkzMDR9.iblhE43SRcB8DDb5pt-Sm7IACv-Yh7pWi7fqXt3mxeFpJtiEVSZFzgvZXDpseUBQ2eFLcDm3kl0KuEEJ1-m43Q")  # ← حط الـ wss الكامل هنا في secrets
-
+WSS_URL = os.getenv("wss://1xlite-07241.pro/games-frame/sockets/crash?ref=1&gr=1559&whence=114&fcountry=66&appGuid=games-web-host-b2c-web-v3&lng=en&v=1.5&access_token=eyJhbGciOiJFUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiIxMC8xMTU2MTM3NzUxIiwicGlkIjoiMSIsImp0aSI6IjAvYWExMTQxMTQwZjAzOWJkNDNkY2U4ZjVhZDdmM2RIYmlzZTNhYzk4ZmRmMzUwN2U1NWM1NzBIZThkNDYyM2E0NCIsImFwcCI6Ik5BIiwic2lkIjoiMDE5Y2Q2ODItNjE0Zi03MTgzLWIzNWItZDEXZDU3NWQ1YzU2IiwiaW5uZXIiOiJ0cnVlIiwid3QiOiJ0cnVlIiwibmJmIjoxNzczMTI1Mzk0LCJleHAiOjE3NzMxMzkzMDR9.iblhE43SRcB8DDb5pt-Sm7IACv-Yh7pWi7fqXt3mxeFpJtiEVSZFzgvZXDpseUBQ2eFLcDm3kl0KuEEJ1-m43Q")
 CSV_FILE = "crash_odds_PRO.csv"
 
 SHORT_RUN_DURATION = 480   # 8 دقايق للـ Actions
