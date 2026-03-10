@@ -14,7 +14,7 @@ from scipy import stats
 # ===================== CONFIG =====================
 TELEGRAM_TOKEN = os.getenv("7044109545:AAF_2u9_HqVGZzFIubnIWCQ3dFm7MyQfmWw")
 CHAT_ID = os.getenv("5773032750")
-WSS_URL = os.getenv("wss://1xlite-07241.pro/games-frame/sockets/crash?ref=1&gr=1559&whence=114&fcountry=66&appGuid=games-web-host-b2c-web-v3&lng=en&v=1.5&access_token=eyJhbGciOiJFUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiIxMC8xMTU2MTM3NzUxIiwicGlkIjoiMSIsImp0aSI6IjAvYWExMTQxMTQwZjAzOWJkNDNkY2U4ZjVhZDdmM2RIYmlzZTNhYzk4ZmRmMzUwN2U1NWM1NzBIZThkNDYyM2E0NCIsImFwcCI6Ik5BIiwic2lkIjoiMDE5Y2Q2ODItNjE0Zi03MTgzLWIzNWItZDEXZDU3NWQ1YzU2IiwiaW5uZXIiOiJ0cnVlIiwid3QiOiJ0cnVlIiwibmJmIjoxNzczMTI1Mzk0LCJleHAiOjE3NzMxMzkzMDR9.iblhE43SRcB8DDb5pt-Sm7IACv-Yh7pWi7fqXt3mxeFpJtiEVSZFzgvZXDpseUBQ2eFLcDm3kl0KuEEJ1-m43Q")
+WSS_URL = os.getenv("wss://1xlite-07241.pro/games-frame/sockets/crash?ref=1&gr=1559&whence=114&fcountry=66&appGuid=games-web-host-b2c-web-v3&lng=en&v=1.5&access_token=eyJhbGciOiJFUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiI1MC8xMTU2MTM3NzUxIiwicGlkIjoiMSIsImp0aSI6IjAvMjMwY2EyZWE2MTljMTNmYWNmODNkOGQxM2FmYzYzNmQ0MTBlZWY4Yzg1Y2FiMTY4MWExNTM2ZTllYTc0YzFhYSIsImFwcCI6Ik5BIiwic2lkIjoiMDE5Y2Q2OWUtZmU2OS03Y2M5LTlhMTUtODViNjVhNzJmMTA1IiwiaW5uZXIiOiJ0cnVlIiwid3QiOiJ0cnVlIiwibmJmIjoxNzczMTI3MjY5LCJleHAiOjE3NzMxNDE2NjksImlhdCI6MTc3MzEyNzI2OX0.1ha5o6rTHp4IcZVl4yq2L0bGwgrcULMccnKteotC4Y-70_1YHx-nRHZ6SOT9P34hO2syq8sb4RknqWtwgQab1g")
 CSV_FILE = "crash_odds_PRO.csv"
 
 SHORT_RUN_DURATION = 480   # 8 دقايق للـ Actions
