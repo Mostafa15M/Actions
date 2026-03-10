@@ -1,0 +1,35 @@
+name: Crash Monitor
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: |
+          pip install --upgrade pip
+          pip install websocket-client requests numpy scipy
+
+      - name: Run short session
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          WSS_URL: ${{ secrets.WSS_URL }}
+        run: python crash_ws_predictor.py --short-run
+
+      - name: Commit CSV
+        run: |
+          git config --global user.name "Bot"
+          git config --global user.email "bot@github.com"
+          git add crash_odds_PRO.csv || true
+          git commit -m "crash update $(date)" || echo "No change"
+          git push || echo "No push"
